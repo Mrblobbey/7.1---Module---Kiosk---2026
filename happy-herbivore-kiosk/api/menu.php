@@ -1,14 +1,16 @@
-
 <?php
-include("../config/database.php");
+// geeft de producten terug als json
+// dit gebruik ik als ik producten via javascript wil ophalen
+require_once '../includes/init.php';
+require_once '../includes/menu_data.php';
 
-$result = $conn->query("SELECT * FROM products");
+header('Content-Type: application/json; charset=utf-8');
 
-$data = [];
+$lang       = $_SESSION['lang'] ?? ($_GET['lang'] ?? 'nl');
+$producten  = menu_ophalen($lang);
 
-while($row = $result->fetch_assoc()){
-$data[] = $row;
-}
-
-echo json_encode($data);
-?>
+echo json_encode([
+    'succes'    => true,
+    'producten' => $producten,
+    'lang'      => $lang,
+]);

@@ -1,0 +1,14 @@
+LETTERTYPES — INSTALLATIE
+=========================
+
+Plaats hier de Renos-Rough .ttf bestanden:
+
+  renos-rough.ttf        (regulier gewicht)
+  renos-rough-bold.ttf   (vet — optioneel)
+
+Het systeem laadt automatisch Renos-Rough via @font-face in style.css.
+Zolang het bestand hier ontbreekt, valt het terug op Noto Sans.
+
+Noto Sans wordt geladen via Google Fonts (internet vereist).
+Voor offline gebruik: download Noto Sans van https://fonts.google.com/noto
+en plaats de .ttf bestanden ook in deze map.
