@@ -17,7 +17,7 @@ require_once 'includes/init.php';
 
 <div class="idle-scherm" id="idle-scherm">
     <video class="idle-video" autoplay loop muted playsinline preload="auto">
-        <source src="assets/video/idle.mp4" type="video/mp4">
+        <source src="../assets/video/idle.mp4" type="video/mp4">
     </video>
     <div class="idle-overlay"></div>
     <div class="idle-content">
